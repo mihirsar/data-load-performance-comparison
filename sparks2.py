@@ -15,9 +15,9 @@ def process_csv_to_mysql():
         # Establishing a connection to the MySQL server
         cnx = mysql.connector.connect(
             user='root',
-            password='Shadu#2011ram',
+            password='YOURPASSWORD',
             host='127.0.0.1',
-            database='pyspark_db'
+            database='DBNAME'
         )
         print("Connection done")
         print("Processing........")

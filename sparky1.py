@@ -15,9 +15,9 @@ def process_csv_to_mysql():
         # Establish connection to MySQL server using Python MySQL connector
         cnx = mysql.connector.connect(
             user='root',
-            password='Shadu#2011ram',
+            password='YOURPASSWORD',
             host='localhost',
-            database='pyspark_db'
+            database='DBNAME'
         )
         print("Connection established")
         
@@ -38,7 +38,7 @@ def process_csv_to_mysql():
         # Insert data into MySQL using PySpark DataFrame
         df.write.format("jdbc").option("url", "jdbc:mysql://localhost:3306/pyspark_pandas_test") \
             .option("dbtable", table_name).option("user", "root") \
-            .option("password", "Shadu#2011ram").mode("overwrite").save()
+            .option("password", "YOURPASSWORD").mode("overwrite").save()
         
         print("Data inserted into MySQL")
 
@@ -52,7 +52,7 @@ def process_csv_to_mysql():
         # Stop Spark session
         spark.stop()
     except Exception as e:
-        print(f"EEEEEEEEEEEEEEEEEEEEEEEEEEEEERRORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR: {e}")
+        print(f"ERROR !!!: {e}")
 
 if __name__ == "__main__":
     process_csv_to_mysql()

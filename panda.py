@@ -7,14 +7,14 @@ import time
 def process_csv_to_mysql():
     try:
         # Read the CSV file
-        df = pd.read_csv("test(1M).csv")
+        df = pd.read_csv("PATH_TO_CSV")
 
         # Establishing a connection to the MySQL server
         cnx = mysql.connector.connect(
             user='root',
-            password='Shadu#2011ram',
+            password='YOURPASSWORD',
             host='127.0.0.1',
-            database='pandasparktest'
+            database='DBNAME'
         )
         print("Connection done")
         print("Processing........")

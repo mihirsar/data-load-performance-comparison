@@ -59,4 +59,7 @@ Contributions are welcome! If you have suggestions, improvements, or would like 
 ## csv on mysql server
 ![Csv on mysql server](csv_on_server.jpeg)
 
+## Link for 1Million rows dataset
+[Drive Link](https://drive.google.com/file/d/1UhKJRCwCglC3tmBQwS9pgd0wgnGMsjrd/view?usp=drive_link)
+
 

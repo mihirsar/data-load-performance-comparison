@@ -55,7 +55,7 @@ mysql_properties = {
     "url": "jdbc:mysql://localhost:3306/pyspark_db",
     "driver": "com.mysql.cj.jdbc.Driver",
     "user": "root",
-    "password": "Shadu#2011ram",
+    "password": "YOURPASSWORD",
     "batchsize": "10000",  # Adjust the batch size as needed
 }
 
